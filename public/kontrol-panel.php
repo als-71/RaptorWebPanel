@@ -1,15 +1,16 @@
 <?php
+require_once '../private/session_manager.php';
 
-require '../private/session_manager.php';
-if(login()!=true) logout();
+if(!isLogin()){
+   header('Location: login.php');
+}
 
-if (!isset($_GET['target'])){
+if (!isset($_GET['target']) || !isset($_GET['type'])){
     header('Location: index.php');
 }
 
-if (!isset($_GET['type'])){
-    $_GET['type'] = 1;
-}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -132,6 +133,7 @@ if (!isset($_GET['type'])){
                 include './modules/text-speech.php';
             } elseif ($_GET['type']==20){
                 logout();
+                header('Location: login.php');
                 ?>
                 <script>
                     window.location.reload();

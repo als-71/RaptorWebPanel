@@ -1,6 +1,8 @@
 <?php
-if (function_exists('login')){
-    if(login()!=true) logout();
+if (function_exists('isLogin')){
+    if(!isLogin()){
+        header('Location: login.php');
+    }
 } else {
-    header('Location: ../login.php');
+    header('Location: login.php');
 }

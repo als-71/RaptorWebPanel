@@ -1,3 +1,21 @@
+<?php
+require_once '../private/session_manager.php';
+
+if (isset($_POST['inputUsername']) && isset($_POST['inputPassword'])){
+    $username = $_POST['inputUsername'];
+    $password = $_POST['inputPassword'];
+    
+    $login_status = login($username, $password);
+    echo $login_status;
+    if($login_status == true){
+        header('Location: index.php');
+    }
+} else 
+    logout();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,24 +43,6 @@
 </head>
 
 <body>
-
-<?php
-require '../private/session_manager.php';
-if (isset($_POST['inputUsername']) && isset($_POST['inputPassword'])){
-    $username = $_POST['inputUsername'];
-    $password = $_POST['inputPassword'];
-    $_SESSION['username'] = $username;
-    $_SESSION['password'] = $password;
-    
-    if(login() == true){
-        header('Location: kontrol-panel.php');
-    } else {
-        logout();
-    }
-}
-
-?>
-
 
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
