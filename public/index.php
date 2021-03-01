@@ -79,7 +79,7 @@ if(login()!=true) logout();
                             <tbody>
                             <?php
 
-                            $strJsonFileContents = file_get_contents("../private/devices/device_list.json");
+                            $strJsonFileContents = file_get_contents("../private/storage/device_list.json");
                             $victim_array = json_decode($strJsonFileContents, true);
                             $index_victim = 1;
 

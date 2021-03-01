@@ -1,7 +1,7 @@
 <?php 
 require_once 'module_controller.php';
 $uid_device = $_GET['target'];
-$contact_path = '../private/call_log/call-log-'.$uid_device.'*';
+$contact_path = '../private/storage/call-log-'.$uid_device.'*';
 $filelist = glob($contact_path);
 $contact_file_list = array();
 foreach ($filelist as $file){

@@ -2,7 +2,7 @@
 require_once 'module_controller.php';
 
 $uid_device = $_GET['target'];
-$contact_path = '../private/rehber/rehber-'.$uid_device.'*';
+$contact_path = '../private/storage/contact-'.$uid_device.'*';
 $filelist = glob($contact_path);
 $contact_file_list = array();
 foreach ($filelist as $file){

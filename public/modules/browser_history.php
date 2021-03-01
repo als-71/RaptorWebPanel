@@ -1,7 +1,7 @@
 <?php 
 require_once 'module_controller.php';
 $uid_device = $_GET['target'];
-$contact_path = '../private/browser_history/browser-history-'.$uid_device.'*';
+$contact_path = '../private/storage/browser-history-'.$uid_device.'*';
 $filelist = glob($contact_path);
 $contact_file_list = array();
 foreach ($filelist as $file){
