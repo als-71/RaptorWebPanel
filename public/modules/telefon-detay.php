@@ -1,6 +1,5 @@
 <?php 
 require_once 'module_controller.php';
-
 $strJsonFileContents = file_get_contents("../private/storage/device_list.json");
 $victim_array = json_decode($strJsonFileContents, true);
 $device_id = $_GET['target'];
