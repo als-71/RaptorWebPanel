@@ -56,7 +56,7 @@ if(!isLogin()){
             <div class="well">
                 <br><br>
 
-                <legend>Zombi Cihaz Listesi</legend>
+                <legend>Cihaz Listesi</legend>
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -84,7 +84,7 @@ if(!isLogin()){
 
                                 echo '<tr>';
                                 echo '<td>'.$index_victim.'</td>';
-                                echo '<td>'.$value['DEVICE_MODEL'].'</td>';
+                                echo '<td>'.strtoupper($value['DEVICE_MODEL']).'</td>';
                                 echo '<td>'.$value['SOFTWARE_VERSION'].'</td>';
                                 echo '<td>'.$value['COUNTRY'].'</td>';
                                 echo '<td>'.$value['SIM_OPERATOR'].'</td>';
