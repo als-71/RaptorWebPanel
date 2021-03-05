@@ -1,19 +1,4 @@
 {
     "device_list": {
-        "ffffffff-e76f-903a-ffff-ffffef05ac4a": {
-            "UNIQUE_ID": "ffffffff-e76f-903a-ffff-ffffef05ac4a",
-            "COUNTRY": "TR",
-            "SOFTWARE_VERSION": "Android 10",
-            "SIM_OPERATOR": "Vodafone",
-            "DEVICE_MODEL": "samsung - SM-A207F",
-            "DEVICE_LANGUAGE": "tr",
-            "IS_ROOTED": "false",
-            "CHARGE": "83%",
-            "TOTAL_RAM": "2.7269096",
-            "location": {
-                "x_axis": "38.66738647a",
-                "y_axis": "42.0693621a"
-            }
-        }
     }
 }
