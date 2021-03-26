@@ -9,6 +9,7 @@ require_once 'module_controller.php';
 
                 </div>
 
+                <!-- file management row -->
                 <div class="row"></div>
                 <br><br>
                 <legend>Dosya Yönetimi</legend>
@@ -43,6 +44,40 @@ require_once 'module_controller.php';
 
                         </fieldset>
                     </form>
+                </div>
+                <br><br>
+
+                <!-- file downloaded list row -->
+                <div class="row"></div>
+                <br><br>
+                <br><br>
+                <legend>İndirilen Dosyalar</legend>
+                <div class="row">
+                    <table class="table table-striped table-hover ">
+                        <thead>
+                        <tr>
+                            <th>Dosya Adı</th>
+                            <th>Boyut</th>
+                        </tr>
+                        </thead>
+                        <tbody id="body-content-id">
+
+                        <?php
+                        $path    = '../private/storage/download/';
+                        $files = scandir($path);
+                        unset($files[0]);
+                        unset($files[1]);
+                        foreach ($files as $file_name){
+                            echo '<tr>';
+                            echo '<td><a href="/modules/download_file.php?file_name='.$file_name.'">'.$file_name.'</a></td>';
+                            echo '<td>' .round(filesize($path.$file_name) / 1024 / 1024 , 3). ' KB</td>';
+
+                            echo '</tr>';
+                        }
+                        ?>
+
+                        </tbody>
+                    </table>
                 </div>
                 <br><br>
             </div>
