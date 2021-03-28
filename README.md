@@ -10,6 +10,9 @@ bu projeyi çalıştırdığınız serverin ip adresini yazmanız yeterlidir. Pr
 **username:root**
 **password:toor**
 
+YouTube 
+https://youtu.be/wJ-K6UfcvQM 
+
 **Login PANEL**
 ![Login panel](https://github.com/sulanmehmetsirin/RaptorWebPanel/blob/main/public/images/login.png)
 
