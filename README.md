@@ -8,6 +8,7 @@ bu projeyi çalıştırdığınız serverin ip adresini yazmanız yeterlidir. Pr
 **Web panelin hesap bilgileri;**
 
 **username:root**
+</br>
 **password:toor**
 
 YouTube tan bu rat ın kurulumunu ve kullanımını aşağıdaki adresten izleyebilirsiniz. 
