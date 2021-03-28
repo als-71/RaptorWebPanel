@@ -10,7 +10,7 @@ bu projeyi çalıştırdığınız serverin ip adresini yazmanız yeterlidir. Pr
 **username:root**
 **password:toor**
 
-YouTube 
+YouTube tan bu rat ın kurulumunu ve kullanımını aşağıdaki adresten izleyebilirsiniz. 
 https://youtu.be/wJ-K6UfcvQM 
 
 **Login PANEL**
