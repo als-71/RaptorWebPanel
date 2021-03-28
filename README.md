@@ -11,8 +11,8 @@ bu projeyi çalıştırdığınız serverin ip adresini yazmanız yeterlidir. Pr
 </br>
 **password:toor**
 
-**YouTube tan bu rat ın kurulumunu ve kullanımını aşağıdaki adresten izleyebilirsiniz.</br>
-**https://youtu.be/wJ-K6UfcvQM 
+**YouTube tan bu rat ın kurulumunu ve kullanımını aşağıdaki adresten izleyebilirsiniz.**</br>
+https://youtu.be/wJ-K6UfcvQM 
 
 **Login PANEL**
 ![Login panel](https://github.com/sulanmehmetsirin/RaptorWebPanel/blob/main/public/images/login.png)
